@@ -53,10 +53,10 @@ cells.forEach(cell => {
 
         if (checkWinner('X')) {
             gameOver = true;
-            statusMessage.textContent = "You win!";
+            statusMessage.textContent = "Winner Winner. Just BBQ Chicken from there!";
         } else if (board.every(cell => cell !== '')) {
             gameOver = true;
-            statusMessage.textContent = "It's a tie!";
+            statusMessage.textContent = "Ngl my Ai not too smart, you should have not let it tie";
         } else {
             currentPlayer = 'O';
             statusMessage.textContent = "AI's turn...";
